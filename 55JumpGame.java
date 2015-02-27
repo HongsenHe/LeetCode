@@ -33,6 +33,7 @@
  */
 public class Solution {
     public boolean canJump(int[] A) {
+        // solution1
         // boolean [] can = new boolean[A.length];
         // can[0] = true;
         
@@ -47,18 +48,51 @@ public class Solution {
         
         // return can[A.length - 1];
         
-        int n = A.length;
-        if (n <= 1) return true;
-        if (A[0] >= n-1) return true;
+        //solution2
+        // int n = A.length;
+        // if (n <= 1) return true;
+        // if (A[0] >= n-1) return true;
         
-        int[] canStillWalk = new int[n];
-        canStillWalk[0] = A[0];
+        // int[] canStillWalk = new int[n];
+        // canStillWalk[0] = A[0];
         
-        for (int i = 1; i < n; i++) {
-            canStillWalk[i] = Math.max(canStillWalk[i - 1], A[i - 1]) - 1;
-            if (canStillWalk[i] < 0) return false;
-        }
+        // for (int i = 1; i < n; i++) {
+        //     canStillWalk[i] = Math.max(canStillWalk[i - 1], A[i - 1]) - 1;
+        //     if (canStillWalk[i] < 0) return false;
+        // }
         
-        return canStillWalk[n - 1] >= 0;
+        // return canStillWalk[n - 1] >= 0;
+
+        // solution4 Time: O(n) Space: O(1)
+        if(A==null || A.length==0)  
+            return false;  
+        int reach = 0;  
+        for(int i=0;i<=reach&&i<A.length;i++)  
+        {  
+            reach = Math.max(A[i]+i,reach);  
+        }  
+        if(reach<A.length-1)  
+            return false;  
+        return true;
     }
 }
+
+
+/* 
+time: O(n) space: O(1)
+soluiton 3
+class Solution {
+public:
+    bool canJump(int A[], int n) {
+        if(n <= 1) return true;
+        if(A[0] >= (n-1)) return true;
+        int pre = A[0], cur = 0;
+        for(int i = 1; i < n; ++i){
+            cur = max(pre, A[i-1]) - 1;
+            if(cur < 0) return false;
+            pre = cur;
+        }
+        return cur >= 0;
+    }
+};
+*/
