@@ -12,6 +12,9 @@ Here are few examples.
 [1,3,5,6], 0 → 0
 */
 
+/*
+remember this templet!
+*/
 public class Solution {
     public int searchInsert(int[] A, int target) {
         if(A == null || A.length == 0){

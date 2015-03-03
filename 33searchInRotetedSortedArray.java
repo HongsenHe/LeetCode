@@ -10,6 +10,9 @@ array return its index, otherwise return -1.
 You may assume no duplicate exists in the array.
 */
 
+/*
+binary search. four situation. /\/\, find mid point
+*/
 public class Solution {
     public int search(int[] A, int target) {
         int start, end, mid;

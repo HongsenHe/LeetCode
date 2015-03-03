@@ -11,6 +11,10 @@ Given [5, 7, 7, 8, 8, 10] and target value 8,
 return [3, 4].
 */
 
+/*
+find start and find end. using the templet!
+*/
+
 public class Solution {
     public int[] searchRange(int[] A, int target) {
         int[] ret = new int[2];

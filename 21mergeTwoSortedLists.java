@@ -14,6 +14,10 @@ made by splicing together the nodes of the first two lists.
  *     }
  * }
  */
+
+/*
+recursive call this method, compare then move to next
+*/
 public class Solution {
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		ListNode result = null;

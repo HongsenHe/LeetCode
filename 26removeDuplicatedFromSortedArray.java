@@ -9,6 +9,10 @@ For example,
 Given input array A = [1,1,2],
 
 Your function should return length = 2, and A is now [1,2].
+
+two pointer, i, j, once current node = next, move next cursor
+once they are different, let current = A[i], once i hits end
+done, and copy from 0 to j+1
 */
 
 public class Solution {

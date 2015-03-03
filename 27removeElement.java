@@ -4,6 +4,9 @@ that value in place and return the new length.
 
 The order of elements can be changed. It doesn't matter 
 what you leave beyond the new length.
+
+go through the array, if current = target. continue i
+once they are diff, let keep counting count, return count
 */
 
 public class Solution {

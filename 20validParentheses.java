@@ -4,6 +4,9 @@ Given a string containing just the characters '(', ')', '{', '}',
 
 The brackets must close in the correct order, "()" and "()[]{}" 
 are all valid but "(]" and "([)]" are not.
+
+create a stack. for all character. if left -> push. then three else if
+if right is in stack, and pop is its left, true; and is not break
 */
 
 	public class Solution {
