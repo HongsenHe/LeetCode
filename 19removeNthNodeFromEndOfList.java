@@ -22,6 +22,10 @@ Try to do this in one pass.
  *     }
  * }
  */
+/*
+two pointer, faster and slow. And one dummy node. let faster goes to nth position
+then move them together, once faster hits the end, slower is on target.prev, remove
+*/
 public class Solution {
 	public ListNode removeNthFromEnd(ListNode head, int n) {
 		if(head == null){

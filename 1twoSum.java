@@ -10,6 +10,9 @@ You may assume that each input would have exactly one solution.
 
 Input: numbers={2, 7, 11, 15}, target=9
 Output: index1=1, index2=2   
+
+create a hashmap, for from start to the end, save sum-current as key, index as value
+if find, return that index and current index
 */
 
 import java.util.*;

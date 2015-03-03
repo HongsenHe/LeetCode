@@ -1,5 +1,9 @@
 /*
 Write a function to find the longest common prefix string amongst an array of strings.
+
+compare every single character of each str with the first str
+if different, break. if the length of current word is smaller, break
+if the same, add this character into a stringBuffer
 */
 
 public class Solution {
