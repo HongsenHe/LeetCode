@@ -22,6 +22,10 @@ Note: Recursive solution is trivial, could you do it iteratively?
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+/*
+create a stack. push and pop
+*/
 public class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ret = new ArrayList<Integer>();

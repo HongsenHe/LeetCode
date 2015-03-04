@@ -19,6 +19,10 @@
  *     }
  * }
  */
+
+/*
+create a dummy node. preM -> m -> n -> postN, two pointer
+*/
 public class Solution {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (m >= n || head == null) {

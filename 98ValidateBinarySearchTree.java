@@ -17,6 +17,11 @@ Both the left and right subtrees must also be binary search trees.
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+/*
+a helper method, root, min, max. when goes left, max is root
+when goes right, min is root
+*/
 public class Solution {
     public boolean isValidBST(TreeNode root) {
         return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
