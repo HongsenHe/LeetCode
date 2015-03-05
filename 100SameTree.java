@@ -15,6 +15,11 @@ structurally identical and the nodes have the same value.
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+/*
+compare the root value, then compare left of p and q
+then compare right child of p and q
+*/
 public class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p == null && q == null){
@@ -26,7 +31,7 @@ public class Solution {
         }else{
             return false;
         }
- 
+
         return false;
     }
 }
